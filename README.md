@@ -3,7 +3,8 @@
 1. Go on the [Github pages site](https://rw-a.github.io/word-hunt/).
 2. Start your Word Hunt game.
 2. Input your letters into the solver.
-3. Manually copy the words back into the game.
+3. Click on a generated word to show it's path on the board.
+3. Manually copy the word back into the game.
 
 ## Automatic Solver (Python)
 1. Install [Across Center](https://download.acrosscenter.com/)
