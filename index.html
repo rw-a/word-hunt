@@ -133,6 +133,8 @@
   let answers = {};       // dict containing words as keys and the corresponding position of their letters on the board as values
   let clicked_word = "";
 
+  let mousedown = false;
+
   const input_table = document.querySelectorAll('input');
 
   // for all the cells but the first one
@@ -216,7 +218,7 @@
   function bindAnswers() {
     let bound_answers = [];
     for (let answer of Object.keys(answers)) {
-      bound_answers.push(`<button class="answer" id="${answer}" onclick="onWordClick(this)">${answer}</button>`);
+      bound_answers.push(`<button class="answer" id="${answer}" onclick="onWordClick(this)" onmousedown="mousedown=true;" onfocusin="clickOnFocus(this)">${answer}</button>`);
     }
     return bound_answers.join('');
   }
@@ -346,6 +348,12 @@
       element.style.backgroundColor = "darkgrey";
       revealWordOnBoard(answers[element.innerText]);
     }
+  }
+
+  function clickOnFocus(element) {
+    // if an answer is focussed on using tab, click it as well
+    if (!mousedown) onWordClick(element);
+    mousedown = false;
   }
 
   function resetEverything() {
