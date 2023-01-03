@@ -3,12 +3,11 @@
 <style>
   body {
     padding-left: 15px;
-  }
-  h1 {
-    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+    max-width: 720px;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
   }
   p {
-    font-family: Helvetica, sans-serif;
     clear: left;
   }
   button.reset {
@@ -94,40 +93,37 @@
 </script>
 
 <body>
+  <table>
+    <tr>
+      <td><input maxlength="1" size="1" onkeypress="return /[a-z]/i.test(event.key)"></td>
+      <td><input maxlength="1" size="1" onkeypress="return /[a-z]/i.test(event.key)"></td>
+      <td><input maxlength="1" size="1" onkeypress="return /[a-z]/i.test(event.key)"></td>
+      <td><input maxlength="1" size="1" onkeypress="return /[a-z]/i.test(event.key)"></td>
+    </tr>
+    <tr>
+      <td><input maxlength="1" size="1" onkeypress="return /[a-z]/i.test(event.key)"></td>
+      <td><input maxlength="1" size="1" onkeypress="return /[a-z]/i.test(event.key)"></td>
+      <td><input maxlength="1" size="1" onkeypress="return /[a-z]/i.test(event.key)"></td>
+      <td><input maxlength="1" size="1" onkeypress="return /[a-z]/i.test(event.key)"></td>
+    </tr>
+    <tr>
+      <td><input maxlength="1" size="1" onkeypress="return /[a-z]/i.test(event.key)"></td>
+      <td><input maxlength="1" size="1" onkeypress="return /[a-z]/i.test(event.key)"></td>
+      <td><input maxlength="1" size="1" onkeypress="return /[a-z]/i.test(event.key)"></td>
+      <td><input maxlength="1" size="1" onkeypress="return /[a-z]/i.test(event.key)"></td>
+    </tr>
+    <tr>
+      <td><input maxlength="1" size="1" onkeypress="return /[a-z]/i.test(event.key)"></td>
+      <td><input maxlength="1" size="1" onkeypress="return /[a-z]/i.test(event.key)"></td>
+      <td><input maxlength="1" size="1" onkeypress="return /[a-z]/i.test(event.key)"></td>
+      <td><input maxlength="1" size="1" onkeypress="return /[a-z]/i.test(event.key)"></td>
+    </tr>
+  </table>
 
-<table>
-  <tr>
-    <td><input maxlength="1" size="1" onkeypress="return /[a-z]/i.test(event.key)"></td>
-    <td><input maxlength="1" size="1" onkeypress="return /[a-z]/i.test(event.key)"></td>
-    <td><input maxlength="1" size="1" onkeypress="return /[a-z]/i.test(event.key)"></td>
-    <td><input maxlength="1" size="1" onkeypress="return /[a-z]/i.test(event.key)"></td>
-  </tr>
-  <tr>
-    <td><input maxlength="1" size="1" onkeypress="return /[a-z]/i.test(event.key)"></td>
-    <td><input maxlength="1" size="1" onkeypress="return /[a-z]/i.test(event.key)"></td>
-    <td><input maxlength="1" size="1" onkeypress="return /[a-z]/i.test(event.key)"></td>
-    <td><input maxlength="1" size="1" onkeypress="return /[a-z]/i.test(event.key)"></td>
-  </tr>
-  <tr>
-    <td><input maxlength="1" size="1" onkeypress="return /[a-z]/i.test(event.key)"></td>
-    <td><input maxlength="1" size="1" onkeypress="return /[a-z]/i.test(event.key)"></td>
-    <td><input maxlength="1" size="1" onkeypress="return /[a-z]/i.test(event.key)"></td>
-    <td><input maxlength="1" size="1" onkeypress="return /[a-z]/i.test(event.key)"></td>
-  </tr>
-  <tr>
-    <td><input maxlength="1" size="1" onkeypress="return /[a-z]/i.test(event.key)"></td>
-    <td><input maxlength="1" size="1" onkeypress="return /[a-z]/i.test(event.key)"></td>
-    <td><input maxlength="1" size="1" onkeypress="return /[a-z]/i.test(event.key)"></td>
-    <td><input maxlength="1" size="1" onkeypress="return /[a-z]/i.test(event.key)"></td>
-  </tr>
-</table>
+  <h1>Wordhunt Solver</h1>
+  <button class="reset" onclick="resetEverything();">Reset</button>
 
-<h1>Wordhunt Solver</h1>
-<button class="reset" onclick="resetEverything();">Reset</button>
-
-<span style="font-size:1px">&#65&#110&#100&#114&#101&#119&#32&#78&#32&#60&#51</span>
-
-<p id="answers"></p>
+  <p id="answers"></p>
 
 </body>
 </html>
